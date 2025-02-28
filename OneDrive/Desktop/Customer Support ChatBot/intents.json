@@ -1,0 +1,99 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "Hello",
+          "Good day",
+          "Greetings",
+          "What's up",
+          "How is it going"
+        ],
+        "responses": [
+          "Hello! How can I help you today?",
+          "Hi there! What can I assist you with?",
+          "Hello! How may I assist you?",
+          "Hey! What can I help you with today?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "See you later",
+          "Goodbye",
+          "I'm leaving",
+          "Have a good day",
+          "Talk to you later"
+        ],
+        "responses": [
+          "Goodbye! Have a great day!",
+          "See you later! Thanks for chatting.",
+          "Bye! Come back if you need anything else."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "That's helpful",
+          "Awesome, thanks",
+          "Thanks for the help"
+        ],
+        "responses": [
+          "You're welcome!",
+          "Happy to help!",
+          "Any time!",
+          "My pleasure!"
+        ]
+      },
+      {
+        "tag": "order_status",
+        "patterns": [
+          "Where is my order?",
+          "Track my order",
+          "When will my order arrive",
+          "Order status",
+          "Check my order"
+        ],
+        "responses": [
+          "I can help you check your order status. Could you please provide your order number?",
+          "To check your order status, I'll need your order number. Do you have it handy?",
+          "I'd be happy to help track your order. What's your order number?"
+        ]
+      },
+      {
+        "tag": "returns",
+        "patterns": [
+          "I want to return my product",
+          "How do I return this?",
+          "Return policy",
+          "Can I get a refund?",
+          "How to exchange an item"
+        ],
+        "responses": [
+          "You can return items within 30 days of delivery. Would you like me to guide you through the return process?",
+          "Our return policy allows returns within 30 days of purchase. I can help you initiate a return if you'd like.",
+          "I'd be happy to help with your return. You can start the process online or I can guide you through it now."
+        ]
+      },
+      {
+        "tag": "product_info",
+        "patterns": [
+          "Tell me about your products",
+          "What products do you sell?",
+          "Product information",
+          "Product details",
+          "Do you have any specials?"
+        ],
+        "responses": [
+          "We offer a wide range of products including electronics, clothing, and home goods. Is there a specific category you're interested in?",
+          "Our product lineup includes the latest tech gadgets, fashionable clothing, and household essentials. What are you looking for today?",
+          "We have everything from smartphones to kitchen appliances. Which product category would you like to know more about?"
+        ]
+      }
+    ]
+  }
