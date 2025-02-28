@@ -1,4 +1,4 @@
-# Test script to verify the chatbot works as expected
+
 import nltk
 import numpy as np
 import tensorflow as tf
@@ -7,21 +7,18 @@ import json
 import pickle
 import random
 
-# Make sure you've run the main script first to create the model and pickle files
 
-# Load the model, words, and classes
+
 model = tf.keras.models.load_model('chatbot_model.h5')
 words = pickle.load(open('words.pkl', 'rb'))
 classes = pickle.load(open('classes.pkl', 'rb'))
 
-# Load intents
+
 with open('intents.json') as file:
     intents = json.load(file)
 
-# Initialize lemmatizer
 lemmatizer = WordNetLemmatizer()
 
-# Functions (same as in the main script)
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)
     sentence_words = [lemmatizer.lemmatize(word.lower()) for word in sentence_words]
@@ -60,7 +57,6 @@ def get_response(ints):
             break
     return result
 
-# Test phrases
 test_phrases = [
     "Hello there",
     "How can I return my order?",
@@ -70,7 +66,7 @@ test_phrases = [
     "Goodbye"
 ]
 
-# Test each phrase
+
 print("Testing the chatbot with sample phrases:")
 for phrase in test_phrases:
     ints = predict_class(phrase)
